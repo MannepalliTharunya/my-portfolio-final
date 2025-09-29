@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tharunya Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+      /* Fade-in for body */
+      body {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      /* Header text animation */
+      .box h1 {
+        animation: slideInLeft 1s ease-out;
+      }
+      .box h2 {
+        animation: slideInLeft 1.5s ease-out;
+      }
+
+      /* Profile image animation + size control */
+      .image {
+        border-radius: 50%;
+        animation: zoomIn 1.5s ease-in-out;
+        transition: transform 0.3s ease;
+        max-width: 280px;  /* reduced size */
+        width: 100%;
+        height: auto;
+      }
+      .image:hover {
+        transform: scale(1.05) rotate(2deg);
+      }
+
+      /* Footer icons hover effect */
+      footer a {
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+      footer a:hover {
+        transform: translateY(-5px);
+        color: #00ff88 !important;
+      }
+
+      /* Keyframes */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideInLeft {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes zoomIn {
+        from { transform: scale(0.5); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+      }
+
+      /* Tagline role animations */
+      .tagline span {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+      .tagline span:nth-child(1) { animation-delay: 0.3s; }
+      .tagline span:nth-child(2) { animation-delay: 0.6s; }
+      .tagline span:nth-child(3) { animation-delay: 0.9s; }
+      .tagline span:nth-child(4) { animation-delay: 1.2s; }
+
+      @keyframes fadeInUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mass-body">
+      <div class="nav-section"></div>
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="image/logo.png" alt="Logo" width="50" height="50" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav anchor ms-auto">
+              <li class="nav-item"><a class="nav-link item-nav" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link item-nav" href="About.html">About</a></li>
+              <li class="nav-item"><a class="nav-link item-nav" href="Skills.html">Skills</a></li>
+              <li class="nav-item"><a class="nav-link item-nav" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link item-nav" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Body Section -->
+      <div class="body-section">
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <!-- Image (shows first on mobile) -->
+            <div class="col-lg-5 col-md-12 text-center order-1 order-lg-2 mb-4 ">
+              <img src="image/tharu.jpg"  alt="profile image"class="hello">
+            </div>
+
+            <!-- Text (shows second on mobile) -->
+            <div class="col-lg-7 col-md-12 text-center text-lg-start order-2 order-lg-1">
+              <h1>
+                Hi 👋<br>
+                I am <span style="color:#00ff88;font-weight: bold;font-size: 56px;">Tharunya</span>
+              </h1>
+              <h2 class="text-center tagline">
+                <span style="color:#00ff88;">T</span>ech Enthusiast |
+                <span style="color:#00ff88;">A</span>spiring Developer |
+                <span style="color:#00ff88;">L</span>earner |
+                <span style="color:#00ff88;">P</span>assionate about Coding
+              </h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer style="background-color: #050a13; padding: 25px 0; text-align: center; color: #aaa; margin-top: 60px;">
+        <div class="container">
+          <p style="margin: 0; font-size: 15px; font-style: italic; color: #ddd;">
+            “Code. Create. Innovate. Repeat.”
+          </p>
+          <p style="margin: 8px 0 0 0; font-size: 16px; font-weight: bold; color: #00ff88;">
+            Tharunya Mannepalli
+          </p>
+          <div style="margin-top: 12px;">
+            <a href="https://github.com/MannepalliTharunya" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/tharunya-mannepalli" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tharunyamannepalli123@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
