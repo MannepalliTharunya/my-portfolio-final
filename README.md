@@ -36,7 +36,5 @@ This project showcases who I am, the technologies I use, and the projects I’ve
 - 🖼️ Personal profile picture
 - ✉️ Contact section
 
----
 
-## 📁 Folder Structure
 
